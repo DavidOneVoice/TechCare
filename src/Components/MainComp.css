@@ -1,0 +1,354 @@
+.maincomp{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    flex-wrap: wrap;
+}
+
+#rightsidebar{
+    height: 100vh;
+    margin-bottom: 2em;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#rightsidebar section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
+    align-items: center;
+    margin-bottom: -2em;
+}
+
+
+#diagnostic{
+    padding: 1em 2em 2em 2em;
+}
+
+#rightsidebar h2{
+    text-align: center;
+    margin-bottom: 0em;
+}
+
+#jessica-img{
+    width: 60%;
+    align-self: center;
+    margin-top: 1em;
+}
+
+#showinfobtn{
+    margin-top: 2em;
+    padding: 1em 2em;
+    align-self: center;
+    background-color: #01F0D0;
+    border-radius: 20px;
+    border: none;
+    transition: all 0.3s;
+}
+
+#showinfobtn:hover{
+    background-color:  white;
+    cursor: pointer;
+    border: 1px solid #01F0D0;
+}
+
+#rightsidebar p{
+    font-size: 0.8em;
+}
+
+.rightsidebaricons{
+    height: 3em;
+    margin-right: 1em;
+}
+
+#rightsidebar2{
+    background-color: white;
+    border-radius: 20px;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+#rightsidebar2 section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+#leftsidebar{
+    width: 20.5%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 1em;
+    height: 250vh;
+}
+
+
+#chart{
+    width: 55%;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+}
+
+.chart-legend{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.chart-legend div{
+    width: 32%;
+    border: 1px solid red;
+    height: 5em;
+}
+
+.chart-container{
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background-color: #F4F0FE;
+    height: 50vh;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+#basic-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.basicinfo-divs{
+    width: 27%;
+}
+
+@media screen and (max-width: 1300px) {
+    #rightsidebar{
+        height: 130vh;
+    }
+
+    .basicinfo-divs{
+        width: 25%;
+    }
+
+    .rightsidebaricons{
+        height: 2em;
+    }
+}
+
+#systolic{   
+        width: 25%;
+        padding-right: 2em;
+        display: flex;
+        flex-direction: column;
+}
+
+@media screen and (max-width: 1165px) {
+    #rightsidebar{
+        height: 120vh;
+    }
+
+    #leftsidebar{
+        width: 22%;
+    }
+
+    .chart-container{
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+    }
+
+    #systolic{
+        flex-direction: row;
+        width: 95%;
+        padding-right: 0;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .sh2{
+        font-size: 1em;
+    }
+
+    #rightsidebar{
+        margin-top: -37em;
+        width: 100%;
+    }
+
+    #chart{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #rightmenu{
+        width: 25%;
+    }
+
+}
+
+#chart-section{
+    padding: 3em 1em;
+}
+
+#chart-section2{
+    width: 68%;
+    padding: 0em 2em;
+}
+
+@media screen and (max-width: 900px) {
+    #rightsidebar{
+        width: 90%;
+        height: 130vh;
+    }
+
+    #chart-section{
+        padding: 1em;
+    }
+
+    .header{
+        margin-bottom: 0.5em;
+    }
+
+    #chart-section2{
+        width: 95%;
+        padding: 0em 1em;
+    }
+
+    .chart-container{
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    #chart{
+        width: 65%;
+    }
+
+    .diagnostic-h3 h3{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    #rightmenu{
+        width: 30%;
+    }
+
+    #leftsidebar{
+        width: 25%;
+    }
+
+    #chart{
+        padding: 0em;
+    }
+}
+
+
+#expand{
+    width: 23%;
+}
+
+@media screen and (max-width: 705px) {
+    #centermenu{
+        display: none;
+    }
+
+    #rightmenu{
+        width: 40%;
+        flex-wrap: nowrap;
+    }
+
+    .header{
+        padding: 0em 1em;
+    }
+
+    #chart-section{
+        padding: 0.5em;
+    }
+
+    #chart{
+        width: 67%;
+    }
+
+    .chart-container{
+        height: 70vh;
+    }
+
+    #systolic{
+        flex-wrap: wrap;
+        width: 90%;
+    }
+
+    #diagnostic{
+        padding: 0.5em;
+    }
+
+    #rightsidebar{
+        width: 85%;
+        height: 130vh;
+        margin-top: -32em;
+    }
+
+    .maincomp{
+        padding: 0em;
+    }
+
+    #expand{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #rightsidebar{
+        width: 80%;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    #leftsidebar{
+        order: 1;
+    }
+
+    #chart{
+        order: 3;
+        width: 90%;
+    }
+
+    #leftsidebar, .sidebar{
+        width: 45%;
+    }
+
+    #rightsidebar{
+        margin-top: 0em;
+        width: 100%;
+    }
+
+    #rightsidebar2{
+        width: 100%;
+    }
+
+    #chart{
+        width: 99%;
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #rightmenu{
+        width: 50%;
+    }
+
+    #logo{
+        width: 30%;
+    }
+}
+

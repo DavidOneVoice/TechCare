@@ -1,0 +1,68 @@
+.header{
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0em 1em;
+    border-radius: 90px;
+    margin-bottom: 2em;
+}
+
+#logo{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+#patients{
+    background-color: #01F0D0;
+    border-radius: 15px;
+    padding: 0.5em;
+}
+
+#logo img{
+    max-width: 100%;
+    height: auto;
+}
+
+#centermenu{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#centermenu div{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 0.5em;
+    transition: all 0.3s;
+}
+
+#centermenu div:hover{
+    background-color: #F2F2F2;
+    border: 1px solid black;
+}
+
+#rightmenu{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#rightmenu article{
+    font-size: 0.8em;
+}
+
+#jose{
+    margin-bottom: -0.3em;
+}
+
+.centermenulist{
+    margin-left: 5px;
+}
